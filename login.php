@@ -21,8 +21,8 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
 			$uname = $_POST['username'];
 			if($uname != "" ){
 				if(in_array($uname, $username)){
-					$url = "sur.php?username=" .$uname
-  					header("Location: sur.php " .$url);
+					$url = "sur.php?username=" .$uname;
+  					header("Location: $url");
   					exit();				
   			}else{
   				$error = "Invalid username";
